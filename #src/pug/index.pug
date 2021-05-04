@@ -5,26 +5,64 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title desire
         link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="css/main.min.css")
     body
-        .header
-            .container
-                .header__inner 
-                    nav.menu
-                        ul.menu__list
-                            li.menu__list-item 
-                                a.menu__list-link(href="#") About
-                            li.menu__list-item 
-                                a.menu__list-link(href="#") Gallery
-                    a.logo(href="#")
-                        img(src="img/logo.png", alt="")
-                    nav.menu
-                        ul.menu__list
-                            li.menu__list-item 
-                                a.menu__list-link(href="#") Blog
-                            li.menu__list-item 
-                                a.menu__list-link(href="#") Contact
-                    button.header__btn
-                        img(src="img/icon_menu.svg", alt="")
+        .wrapper
+            .header
+                .container
+                    .header__inner 
+                        nav.menu
+                            ul.menu__list
+                                li.menu__list-item 
+                                    a.menu__list-link(href="#") About
+                                li.menu__list-item 
+                                    a.menu__list-link(href="#") Gallery
+                        a.logo(href="#")
+                            img(src="img/logo.png", alt="")
+                        nav.menu
+                            ul.menu__list
+                                li.menu__list-item 
+                                    a.menu__list-link(href="#") Blog
+                                li.menu__list-item 
+                                    a.menu__list-link(href="#") Contact
+                        button.header__btn
+                            img(src="img/icon_menu.svg", alt="")
+            main.main
+            .footer 
+                .footer__content
+                    .container
+                        .footer__inner
+                            .footer__info
+                                h6.footer__info-title Contact Us
+                                p.footer__info-text 
+                                    |Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy
+                                a.footer__info-email(href="mailto:ouremailaddress@email.com") ouremailaddress@email.com
+                                form.footer__form
+                                    input.footer__form-input(type="email" placeholder="Subscribe by email")
+                                    button.footer__form-btn(type="submit") Send
+                            ul.footer__social-list
+                                li.footer__social-item
+                                    a.footer__social-link.footer__social-link--facebook(href="#") Facebook
+                                li.footer__social-item
+                                    a.footer__social-link.footer__social-link--instagram(href="#") Instagram
+                                li.footer__social-item
+                                    a.footer__social-link.footer__social-link--pinterest(href="#") Pinterest
+                                li.footer__social-item
+                                    a.footer__social-link.footer__social-link--whatsapp(href="#") WhatsApp
+                                li.footer__social-item
+                                    a.footer__social-link.footer__social-link--youtube(href="#") Youtube 
+                            nav.footer__menu
+                                ul.footer__menu-list
+                                    li.footer__menu-item
+                                        a.footer__menu-link(href="#") Delivery
+                                    li.footer__menu-item
+                                        a.footer__menu-link(href="#") FAQ
+                                    li.footer__menu-item
+                                        a.footer__menu-link(href="#") Help
+                                    li.footer__menu-item
+                                        a.footer__menu-link(href="#") More About Us
+                .footer__copyright 
+                    .container
+                        p 674 Gonzales Drive.   Washington, PA 15301
     script(src="js/main.min.js")
