@@ -5,4 +5,11 @@ $(function(){
     $('.rightside-menu__close').on('click', function(){
         $('.rightside-menu').removeClass('rightside-menu--active');
     })
+
+    $('.top__slider').slick({
+        dots:true,
+        arrows: false,
+        fade: true,
+        loop: true,
+    })
 })
