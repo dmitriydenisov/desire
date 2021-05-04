@@ -1,9 +1,7 @@
-@import "_global";
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
 
-//sections
-// @import "section/header";
-// @import "section/surf";
-// @import "section/holder";
-// @import "section/shop";
-// @import "section/footer";
-
+@import 'section/header';

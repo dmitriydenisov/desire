@@ -3,14 +3,28 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title 
-        link(rel="stylesheet", href="libs/normalize/normalize.css")
-        link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
+        title desire
         link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap")
-        link(rel="stylesheet" href="libs/animatecss/animate.css")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="css/main.min.css")
-
     body
-        
-    script(src="js/main.js")
+        .header
+            .container
+                .header__inner 
+                    nav.menu
+                        ul.menu__list
+                            li.menu__list-item 
+                                a.menu__list-link(href="#") About
+                            li.menu__list-item 
+                                a.menu__list-link(href="#") Gallery
+                    a.logo(href="#")
+                        img(src="img/logo.png", alt="")
+                    nav.menu
+                        ul.menu__list
+                            li.menu__list-item 
+                                a.menu__list-link(href="#") Blog
+                            li.menu__list-item 
+                                a.menu__list-link(href="#") Contact
+                    button.header__btn
+                        img(src="img/icon_menu.svg", alt="")
+    script(src="js/main.min.js")
