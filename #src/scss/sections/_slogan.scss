@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     &__title{
+        @extend %title-font;
         color: $title-color;
         max-width: 730px;
         font-size: 60px;

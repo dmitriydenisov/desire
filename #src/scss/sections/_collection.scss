@@ -2,6 +2,7 @@
     text-align: center;
     padding: 45px 0 105px;
     &__title{
+        @extend %title-font;
         color: $title-color;
         font-size: 36px;
         line-height: 51px;
