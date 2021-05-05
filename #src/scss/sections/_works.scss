@@ -8,7 +8,6 @@
         font-size: 36px;
         line-height: 51px;
     }
-    &__items{}
     &__items-box{
         display: flex;
         align-items: flex-end;
@@ -59,15 +58,12 @@
             height: 20px;
             width: 2px;
             background-color:  rgba($title-color, .7);
-
         }
     }
-    &__item-img{}
     &__item-title{
         @extend %title-font;
         margin-left: 13px;
         color: $title-color;
-
     }
     &__item-text{
         margin-top: 12px;

@@ -13,4 +13,6 @@ $(function(){
         loop: true,
         autoplay: true,
     })
+
+    const mixer = mixitup('.gallery__inner');
 })
