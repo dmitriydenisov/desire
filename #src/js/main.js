@@ -11,5 +11,6 @@ $(function(){
         arrows: false,
         fade: true,
         loop: true,
+        autoplay: true,
     })
 })

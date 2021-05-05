@@ -1,6 +1,22 @@
 .top{
-    &__inner{}
-    &__slider{}
+    &__inner{
+        position: relative;
+        padding-bottom: 70px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../img/main_slider.jpg);
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            width: 100%;
+            height: 723px;
+            top: 0;
+            z-index: -1;
+        }
+    }
+    &__slider{
+      
+    }
     &__slider-item{
         display: flex !important;
         justify-content: center;

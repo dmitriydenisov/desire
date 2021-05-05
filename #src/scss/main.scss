@@ -4,7 +4,10 @@
 @import 'libs';
 @import 'global';
 
+//blocks
 @import 'blocks/header';
-@import 'sections/menu';
-@import 'blocks/main';
 @import 'blocks/footer';
+
+//sections
+@import 'sections/menu';
+@import 'sections/top';
