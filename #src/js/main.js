@@ -14,5 +14,10 @@ $(function(){
         autoplay: true,
     })
 
-    const mixer = mixitup('.gallery__inner');
+
+    const mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.bedroom'
+        }
+    });
 })
