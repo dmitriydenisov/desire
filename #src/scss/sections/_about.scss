@@ -14,4 +14,37 @@
         font-size: 60px;
         line-height: 80px;
     }
+    
+    &__content{
+        padding: 130px 0 40px;
+    }
+    &__title{
+        @extend %title-font;
+        color: $title-color;
+        font-size: 36px;
+        line-height: 60px;
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 1px;
+            background-color: $title-color;
+        }
+    }
+    &__text{
+        padding-left: 285px;
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    &__popup{
+        
+    }
+    &__popup-play{}
+    &__popup-imgbtn{}
 }
