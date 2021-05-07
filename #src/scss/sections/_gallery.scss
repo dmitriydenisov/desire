@@ -16,20 +16,12 @@
         cursor: pointer;
         transition: all .5s;
     }
-    
-.mixitup-control-active{
-	color:$title-color;
-	background-color: #FFEF35;
-    border: 1px solid #FFEF35;
-}
-    &__inner{}
     &__items{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px 35px;
     }
-
     &__item:first-child{
         grid-column: span 2;
         grid-row: span 2;
@@ -40,4 +32,9 @@
         max-height: 1150px;
         height: 100%;
     }
+}
+.mixitup-control-active{
+	color:$title-color;
+	background-color: #FFEF35;
+    border: 1px solid #FFEF35;
 }

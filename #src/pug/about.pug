@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title desire
+        title DESIRE - ABOUT
         link(rel="preconnect" href="https://fonts.gstatic.com")
         link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="css/main.min.css")
@@ -15,7 +15,7 @@ html(lang="en")
                         nav.menu
                             ul.menu__list
                                 li.menu__list-item 
-                                    a.menu__list-link(href="#") About
+                                    a.menu__list-link.menu__list-link--active(href="#") About
                                 li.menu__list-item 
                                     a.menu__list-link(href="#") Gallery
                         a.logo(href="#")
@@ -46,6 +46,19 @@ html(lang="en")
                                 a.breadcrumbs__link(href="index.html") Home
                             li.breadcrumbs__item
                                 a.breadcrumbs__link(href="#") About
+                section.about
+                    .about__prev
+                        .container 
+                            h2.about__prev-title About Us
+                    .about__content
+                        .container
+                            h3.about__title Balance in the simple through an informed marriage of design, functional and craft
+                            .about__text 
+                                p Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock chillwave literally post-ironic ramps subway tile kitsch. Shaman tumblr fixie echo park street art. Enamel pin vaporware wayfarers, organic succulents hella sustainable cardigan
+                                p Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn tilde distillery pork belly single-origin coffee tumblr quinoa copper mug. Affogato cold-pressed unicorn, viral intelligentsia leggings raw denim kombucha tote bag messenger bag chambray vape coloring book scenester. Activated charcoal wayfarers church-key tote bag synth brunch. Retro cornhole
+                            .about__popup
+                                a.about__popup-play(href="#") 
+                                    img.about__popup-imgbtn(src="img/icons/play.svg", alt="")
             .footer 
                 .footer__content
                     .container

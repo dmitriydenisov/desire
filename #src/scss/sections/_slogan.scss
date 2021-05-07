@@ -1,6 +1,6 @@
 .slogan{
     padding: 170px 0 155px;
-    background-image: url(../img/slogan-bg.jpg);
+    background-image: url(../img/background/slogan-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     &__title{
@@ -21,7 +21,6 @@
             width: 200px;
             height: 1px;
         }
-
     }
     &__text{
         max-width: 540px;

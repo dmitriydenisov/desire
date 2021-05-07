@@ -5,7 +5,7 @@
         &::after{
             content: '';
             position: absolute;
-            background-image: url(../img/main_slider.jpg);
+            background-image: url(../img/background/main_slider.jpg);
             // background-repeat: no-repeat;
             // background-size: contain;
             width: 100%;
@@ -13,9 +13,6 @@
             top: 0;
             z-index: -1;
         }
-    }
-    &__slider{
-      
     }
     &__slider-item{
         display: flex !important;
@@ -54,5 +51,4 @@
     &__slider-text{
         max-width: 585px;
     }
-    
 }
