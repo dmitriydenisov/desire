@@ -86,8 +86,8 @@ iframe {
 #close {
     z-index: 99;
     position: fixed;
-    top: 22px;
-    right: 15px;
+    top: 70px;
+    right: 130px;
     justify-content: center;
     align-items: center;
     width: 30px;
@@ -97,7 +97,7 @@ iframe {
   
 .close-icon-line {
     position: relative;
-    width: 30px;
+    width: 65px;
     height: 5px;
     background-color: transparent; 
 }
@@ -107,7 +107,7 @@ iframe {
     left: 0;
     top: 5px;
     content: '';
-    width: 30px;
+    width: 65px;
     height: 5px;
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
@@ -119,7 +119,7 @@ iframe {
     left: 0;
     top: 5px;
     content: '';
-    width: 30px;
+    width: 65px;
     height: 5px;
     background-color: #fff;
     transform: rotate(-45deg); 

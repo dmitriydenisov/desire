@@ -65,5 +65,6 @@
         border-radius: 4px;
         background-color: $title-color;
         margin-top: -2px;
+        transition: width 5s ease-in;
     }
 }
