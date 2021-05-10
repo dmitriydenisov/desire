@@ -4,7 +4,44 @@
         display: flex;
         justify-content: space-between;
     }
-    &__items{}
+    &__category{
+        margin-bottom: 36px;
+    }
+    &__category-title{
+        @extend %title-font;
+        line-height: 23px;
+        margin-bottom: 15px;
+        color: $title-color;
+    }
+    &__category-list{}
+    &__category-item{
+        margin-bottom: 12px;
+    }
+    &__category-link{
+        color: inherit;
+
+    }
+}
+.recent-posts{
+    margin-bottom: 40px;
+    &__title {
+        margin-bottom: 24px;
+        color: $title-color;
+        @extend %title-font;
+        line-height: 23px;
+    }
+    &__list{
+        margin-bottom: 11px;
+    }
+    &__item-title{
+        display: block;
+        color: inherit;
+    }
+    &__date,
+    &__author{
+        color:#A1A1A1;
+        font-size: 14px;
+    }
 }
 .aside{    
     width: 350px;
@@ -41,17 +78,10 @@
     }
 }
 
-// __category
-// __category-title
-// __category-list
-// __category-item
-// __category-link
-// .recent-posts
-// recent__posts-title 
-// recent__posts-list
-// recent
+
+
 // __posts-item
-// .recent__posts-item-title
+// .recent__posts-
 // .recent__posts__date
 // recent-posts_author
 // blog__tags
