@@ -19,8 +19,16 @@ $(function(){
         dots:true,
         arrows: false,
         // loop: true,
-    })
-
+    });
+    
+    $('.article-slider__box').slick({
+        fade: true,
+        // dots:false,
+        // arrows: true,
+        loop: true,
+        prevArrow: '<button class="article-slider__arrow article-slider__arrowLeft"  type="button" ><img src="img/icons/back.svg" alt=""></img></button>',
+        nextArrow: '<button class="article-slider__arrow article-slider__arrowRight"  type="button" style=""><img src="img/icons/next.svg" alt=""></img></button>',
+    });
 
     const mixer = mixitup('.gallery__inner', {
         load: {
