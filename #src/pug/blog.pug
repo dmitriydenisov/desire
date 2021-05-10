@@ -4,8 +4,9 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title desire
+        link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
         link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="css/main.min.css")
     body
         .wrapper
@@ -62,7 +63,53 @@ html(lang="en")
                     .container
                         .blog__inner
                             .blog__items
-                            
+                                .blog__item
+                                    img.blog__item-img(src="img/blog/big-1.jpg" alt="")
+                                    .blog__item-info 
+                                        span.blog__item-date August 15, 2020 |
+                                        a.blog__item-author(href="#") by Ann Summers |
+                                        a.blog__item-theme(href="#") Bedroom Furniture
+                                    h3.blog__item-title Red selfies edison bulb four dollar toast humblebrag for the furniture
+                                    p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+                                blockquote.blog__blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations” 
+                                    .blog__blockquote-author Paul Rand
+                                .blog__item.article-video
+                                    img.blog__item-img(src="img/blog/big-2.jpg", alt="")
+                                    .video-popup.video-popup--blog
+                                        button.video-popup-play(data-btn-video="")
+                                            img.video-popup-img(src="img/icons/play.svg", alt="")
+                                        .video-popup-player(data-modal-video="")
+                                            .video-modal
+                                                #player 
+                                            .close-icon#close
+                                                .close-icon-line
+                                    .blog__item-info  
+                                        span.blog__item-date August 12, 2020 |
+                                        a.blog__item-author(href="#") by Lux Morningstar |
+                                        a.blog__item-theme(href="#") Design
+                                    h3.blog__item-title Authentic kogi shabby chic
+                                
+                                .blog__item.article-slider 
+                                    .article-slider__box
+                                        img.article-slider__img(src="img/blog/big-3.jpg", alt="")
+                                        img.article-slider__img(src="img/blog/big-3.jpg", alt="")
+                                        img.article-slider__img(src="img/blog/big-3.jpg", alt="")
+                                    .blog__item-info 
+                                        span.blog__item-date August 18, 2020 |
+                                        a.blog__item-author(href="#") by Ann Summers |
+                                        a.blog__item-theme(href="#") Table Furniture
+                                    h3.blog__item-title Semiotics fixie four dollar toast, next level woke
+                                    p.blog__item-text Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+                                .pagination
+                                    a.pagination__arrow.pagination__arrow--disabled(href="#")
+                                        img.pagination__arrow-icon(src="img/icons/arrows-left.svg", alt="")
+                                    ul.pagination__list
+                                        li.pagination__list-item
+                                            a.pagination__list-num.pagination__list-num--active(href="#") 1
+                                        li.pagination__list-item
+                                            a.pagination__list-num(href="#") 2
+                                    a.pagination__arrow(href="#")
+                                        img.pagination__arrow-icon(src="img/icons/arrows-right.svg", alt="")
                             aside.aside
                                 form.aside__search
                                     input(type="tex" placeholder="Search").aside__search-input 
@@ -163,4 +210,6 @@ html(lang="en")
                     .container
                         p 674 Gonzales Drive.   Washington, PA 15301
     script(src="libs/jquery/jquery.js")
-    script(src="js/main.min.js")
+    script(src="libs/slick/slick.min.js")
+    script(src="js/video.min.js")
+    script(src="js/main.js")

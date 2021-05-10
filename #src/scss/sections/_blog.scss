@@ -4,6 +4,67 @@
         display: flex;
         justify-content: space-between;
     }
+    &__items{
+        max-width: 730px;
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 80px;
+    }
+    &__item-img{
+        max-height: 730px;
+    }
+    &__item-info{    
+        padding: 25px 0 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #707070;
+        a{
+            color: inherit;
+        }
+    }
+    &__item-title{
+        @extend %title-font;
+        color: $title-color;
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 6px;
+    }
+    &__blockquote{
+        background-color: rgba(223, 223, 223, .5);
+        padding: 55px 65px;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 38px;
+        color: $title-color;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    &__blockquote-author{
+        @extend %title-font;
+        color: $title-color;
+        font-size: 16px;
+        line-height: 22px;
+        font-style: normal;
+        margin-top: 23px;
+        padding-top: 23px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: #6D7278;
+            width: 200px;
+            height: 1px;
+            margin: 0 auto;
+            border-radius: 1px;
+        }
+
+    }
+    
     &__category{
         margin-bottom: 36px;
     }
@@ -14,7 +75,6 @@
         margin-bottom: 15px;
         color: $title-color;
     }
-    &__category-list{}
     &__category-item{
         margin-bottom: 12px;
     }
@@ -40,6 +100,24 @@
     }
     &__social-item{
         margin-right: 20px;
+    }
+}
+.article-slider {
+    &__arrow{
+        padding: 0;
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+    }
+    &__arrowLeft{
+        left: 15px;
+    }
+    &__arrowRight{
+        right: 15px;
     }
 }
 .recent-posts{
@@ -95,5 +173,30 @@
         top: 10px;
         right: 10px;
         cursor: pointer;
+    }
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__list{
+        display: flex;
+    }
+    &__list-item{
+        margin: 0 6px;
+    }
+    &__arrow{
+        margin: 0 6px;
+    }
+    &__arrow--disabled{
+        display: none;
+    }
+    &__list-num{
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+        &--active{
+            color: $title-color;
+        }
     }
 }
