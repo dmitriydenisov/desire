@@ -12,6 +12,13 @@ $(function(){
         fade: true,
         loop: true,
         autoplay: true,
+    });
+    $('.contact-slider').slick({
+        slidesToShow: 10,
+        slidesToScroll: 10,
+        dots:true,
+        arrows: false,
+        // loop: true,
     })
 
 
