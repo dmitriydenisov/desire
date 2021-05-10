@@ -1,0 +1,99 @@
+.blog{
+    padding: 60px 0 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__category{
+        margin-bottom: 36px;
+    }
+    &__category-title,
+    &__tags-title{
+        @extend %title-font;
+        line-height: 23px;
+        margin-bottom: 15px;
+        color: $title-color;
+    }
+    &__category-list{}
+    &__category-item{
+        margin-bottom: 12px;
+    }
+    &__category-link{
+        color: inherit;
+    }
+    &__tags{
+        margin-bottom: 50px;
+    }
+    &__tags-link{
+        color: #8F8D8D;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 16px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        border: 1px solid rgba(#454647, .5);
+        border-radius: 14px;   
+    }
+    &__social{
+        display: flex;
+    }
+    &__social-item{
+        margin-right: 20px;
+    }
+}
+.recent-posts{
+    margin-bottom: 40px;
+    &__title {
+        margin-bottom: 24px;
+        color: $title-color;
+        @extend %title-font;
+        line-height: 23px;
+    }
+    &__list{
+        margin-bottom: 11px;
+    }
+    &__item-title{
+        display: block;
+        color: inherit;
+    }
+    &__date,
+    &__author{
+        color:#A1A1A1;
+        font-size: 14px;
+    }
+}
+.aside{    
+    width: 350px;
+    margin-left: 30px;
+    &__search{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__search-input{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 28px;
+        color: #A1A1A1;
+        padding: 6px 45px 6px 18px;
+        border:1px solid rgba($title-color, .7);
+        border-radius: 20px;
+        outline: none;
+        &::placeholder{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            color: #A1A1A1;
+        }
+    }
+    &__search-btn{
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}

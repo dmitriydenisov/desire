@@ -27,7 +27,7 @@
         padding-left: 284px;
         display: flex;
     }
-    &__social-item{
+    &__social-item + .contact__social-item{
         padding-left: 40px;
         padding-bottom: 20px;
     }
