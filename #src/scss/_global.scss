@@ -54,3 +54,22 @@ body{
 		font-size: 0;
 	}
 }
+.info-email{
+	font-weight: 600;
+	color: $title-color;
+	font-size: 14px;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 9px;
+		width: 16px;
+		height: 12px;
+		background-image: url(../img/social/envelope.svg);
+		background-repeat: no-repeat;
+	}
+}
