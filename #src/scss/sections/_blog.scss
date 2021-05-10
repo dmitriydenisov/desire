@@ -7,7 +7,8 @@
     &__category{
         margin-bottom: 36px;
     }
-    &__category-title{
+    &__category-title,
+    &__tags-title{
         @extend %title-font;
         line-height: 23px;
         margin-bottom: 15px;
@@ -19,7 +20,26 @@
     }
     &__category-link{
         color: inherit;
-
+    }
+    &__tags{
+        margin-bottom: 50px;
+    }
+    &__tags-link{
+        color: #8F8D8D;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 16px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        border: 1px solid rgba(#454647, .5);
+        border-radius: 14px;   
+    }
+    &__social{
+        display: flex;
+    }
+    &__social-item{
+        margin-right: 20px;
     }
 }
 .recent-posts{
@@ -77,18 +97,3 @@
         cursor: pointer;
     }
 }
-
-
-
-// __posts-item
-// .recent__posts-
-// .recent__posts__date
-// recent-posts_author
-// blog__tags
-// blog__tags-title
-// blog__tags-link
-// .blog__social
-// .blog__cocial-item
-// .blog
-// __social-link
-// g.blog__social-img
