@@ -200,3 +200,186 @@
         }
     }
 }
+.single-article__item{
+    p{
+        margin-bottom: 40px;
+    }
+    blockquote{
+        font-size: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: $title-color;
+        margin-bottom: 30px;
+        padding: 0 40px;
+    }
+    .blog__blockquote-author::after{
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+.single-article{
+    &__tags{
+        margin-bottom: 30px;
+    }
+    &__tags-title{
+        color: $title-color;
+        @extend %title-font;        
+        font-size: 20px;
+        line-height: 31px;
+        margin-bottom: 15px;
+    }
+    &__tags-link{
+        margin-bottom: 10px;
+        margin-right: 23px;
+        padding: 0 16px;
+        color: #8F8D8D;
+        font-size: 14px;
+        line-height: 28px;  
+        font-weight: 600;        
+        border: 1px solid rgba(#454647, .5);
+        border-radius: 14px;
+        display: inline-block;
+    }
+    &__links{
+        padding: 40px 0 32px;
+        border-top: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        width: 243px;
+        position: relative;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 23px;
+        }
+    }
+    &__link-prev{
+        padding-left: 45px;
+        &::before{
+            background-image: url(../img/icons/prev-article.svg);
+            left: 0;
+        }
+    }
+    &__link-next{
+        padding-right: 45px;
+        text-align: right;
+        &::before{
+            background-image: url(../img/icons/next-article.svg);
+            right: 0;
+        }
+    }
+    &__comments{
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    &__coments-title{        
+        color: $title-color;
+        @extend %title-font; 
+        margin-bottom: 23px;
+        font-size: 20px;
+        line-height: 31px
+    }
+    &__comments-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    &__comments-avatar{
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+    &__comments-name{
+        color: $title-color;
+        @extend %title-font;
+        line-height: 23px;
+    }
+    &__comments-date{
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #A1A1A1;
+    }
+    &__comments-text{}
+    &__comments-btn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #707070;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__form-title{
+        color: $title-color;
+        @extend %title-font;
+        margin-bottom: 25px;
+        line-height: 23px;
+    }
+    &__form-imput{
+        border: 1px solid #DFDFDF;
+        border-radius: 20px;
+        padding: 6px 17px;
+        margin-bottom: 13px;
+        width: 48%;
+        outline: none;
+        &::placeholder{
+            font-family: 'Open Sans', sans-serif;
+	        font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #A1A1A1;
+        }
+    }
+    &__form-textarea{
+        width: 100%;
+        border: 1px solid #DFDFDF;
+        border-radius: 24px;
+        padding: 14px 17px;
+        margin-bottom: 12px;
+        min-height: 125px;
+        resize: none;
+        outline: none;
+        &::placeholder{
+            font-family: 'Open Sans', sans-serif;
+	        font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #A1A1A1;
+        }
+    }
+    &__form-label{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 28px;
+        color: #a1a1a1;
+    }
+    &__form-labelinput{}
+    &__form-btn{
+        border: none;
+        border-radius: 21px;
+        background-color: $title-color;
+        color: #FFF;
+        font-weight: 600;
+        padding: 6px 60px;
+        cursor: pointer;
+    }
+    
+}

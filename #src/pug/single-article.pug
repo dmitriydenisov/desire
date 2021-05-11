@@ -5,7 +5,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title DESIRE - SINGLE
         link(rel="preconnect" href="https://fonts.gstatic.com")
-        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet")
+
         link(rel="stylesheet" href="css/main.min.css")
     body
         .wrapper
@@ -46,10 +47,53 @@ html(lang="en")
                                 a.breadcrumbs__link(href="index.html") Home
                             li.breadcrumbs__item
                                 a.breadcrumbs__link(href="#") Single
-                section.blog
+                section.blog.single-article
                     .container
                         .blog__inner
                             .blog__items
+                                .blog__item.single-article__item
+                                    img.blog__item-img(src="img/blog/big-1.jpg" alt="")
+                                    .blog__item-info 
+                                        span.blog__item-date August 15, 2020 |
+                                        a.blog__item-author(href="#") by Ann Summers |
+                                        a.blog__item-theme(href="#") Bedroom Furniture
+                                    h3.blog__item-title Red selfies edison bulb four dollar toast humblebrag for the furniture
+                                    .single-article__text
+                                        p Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+                                            |Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+
+                                        blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations” 
+                                            .blog__blockquote-author Paul Rand
+
+                                        p Af man bun copper mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table.
+                                            |Yuccie portland kickstarter, readymade ramps humblebrag ennui banjo mumblecore vaporware pickled cray stumptown 8-bit mlkshk. Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche. Tousled yr williamsburg austin edison bulb cloud bread vegan street art. Locavore food truck trust fund palo santo asymmetrical, franzen deep v marfa kogi whatever swag pop-up seitan.
+                                    .single-article__tags
+                                        h4.single-article__tags-title Tags
+                                        a.single-article__tags-link(href="#") Bedroom furniture
+                                        a.single-article__tags-link(href="#") Office furniture
+                                        a.single-article__tags-link(href="#") Dining room futniture
+                                        a.single-article__tags-link(href="#") Chair
+                                    .single-article__links 
+                                        a.single-article__link.single-article__link-prev(href="#") Cred selfies edison bulb four dollar toast humblebrag
+                                        a.single-article__link.single-article__link-next(href="#") Semiotics fixie four dollar toast, next level
+                                .single-article__comments
+                                    h4.single-article__coments-title Comments:
+                                    .single-article__comments-item
+                                        img.single-article__comments-avatar(src="img/usercontent/avatar.jpg", alt="")
+                                        .single-article__comments-info 
+                                            p.single-article__comments-name Lea Brown
+                                            p.single-article__comments-date August 12, 2020
+                                            p.single-article__comments-text Tumeric tousled austin, kinfolk scenester authentic craft beer truffaut irony intelligentsia YOLO lomo bushwick coloring book. Semiotics man bun venmo viral cliche
+                                        button.single-article__comments-btn Replay
+                                form.single-article__form
+                                    h4.single-article__form-title Post a Comment
+                                    textarea.single-article__form-textarea(placeholder="Your comment")
+                                    input.single-article__form-imput(placeholder="Your name" type="text")
+                                    input.single-article__form-imput(placeholder="Your e-mail" type="email")
+                                    label.single-article__form-label
+                                        input.single-article__form-labelinput(type="checkbox") 
+                                        |Remember me
+                                    button.single-article__form-btn(type="submit") Submit
                             aside.aside
                                 form.aside__search
                                     input(type="tex" placeholder="Search").aside__search-input 
