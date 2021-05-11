@@ -18,7 +18,11 @@
 .blog__blockquote-author,
 .blog__category-title,
 .blog__tags-title,
-.recent-posts__title {
+.recent-posts__title,
+.single-article__tags-title,
+.single-article__coments-title,
+.single-article__comments-name,
+.single-article__form-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -1658,6 +1662,288 @@ iframe {
 
 .pagination__list-num--active {
   color: #363838;
+}
+
+.single-article__item p {
+  margin-bottom: 40px;
+}
+
+.single-article__item blockquote {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #363838;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+
+.single-article__item .blog__blockquote-author::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.single-article__tags {
+  margin-bottom: 30px;
+}
+
+.single-article__tags-title {
+  color: #363838;
+  font-size: 20px;
+  line-height: 31px;
+  margin-bottom: 15px;
+}
+
+.single-article__tags-link {
+  margin-bottom: 10px;
+  margin-right: 23px;
+  padding: 0 16px;
+  color: #8F8D8D;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 600;
+  border: 1px solid rgba(69, 70, 71, 0.5);
+  border-radius: 14px;
+  display: inline-block;
+}
+
+.single-article__links {
+  padding: 40px 0 32px;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single-article__link {
+  width: 243px;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #707070;
+}
+
+.single-article__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 23px;
+}
+
+.single-article__link-prev {
+  padding-left: 45px;
+}
+
+.single-article__link-prev::before {
+  background-image: url(../img/icons/prev-article.svg);
+  left: 0;
+}
+
+.single-article__link-next {
+  padding-right: 45px;
+  text-align: right;
+}
+
+.single-article__link-next::before {
+  background-image: url(../img/icons/next-article.svg);
+  right: 0;
+}
+
+.single-article__comments {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.single-article__coments-title {
+  color: #363838;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.single-article__comments-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.single-article__comments-avatar {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.single-article__comments-name {
+  color: #363838;
+  line-height: 23px;
+}
+
+.single-article__comments-date {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.single-article__comments-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.single-article__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single-article__form-title {
+  color: #363838;
+  margin-bottom: 25px;
+  line-height: 23px;
+}
+
+.single-article__form-imput {
+  border: 1px solid #DFDFDF;
+  border-radius: 20px;
+  padding: 6px 17px;
+  margin-bottom: 13px;
+  width: 48%;
+  outline: none;
+}
+
+.single-article__form-imput::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-imput::-moz-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-imput:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-imput::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-imput::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-textarea {
+  width: 100%;
+  border: 1px solid #DFDFDF;
+  border-radius: 24px;
+  padding: 14px 17px;
+  margin-bottom: 12px;
+  min-height: 125px;
+  resize: none;
+  outline: none;
+}
+
+.single-article__form-textarea::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-textarea::-moz-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-textarea:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-textarea::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-textarea::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A1A1A1;
+}
+
+.single-article__form-label {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #a1a1a1;
+}
+
+.single-article__form-btn {
+  border: none;
+  border-radius: 21px;
+  background-color: #363838;
+  color: #FFF;
+  font-weight: 600;
+  padding: 6px 60px;
+  cursor: pointer;
 }
 
 .webp .top__inner::after { background-image: url(../img/background/main_slider.webp); }
