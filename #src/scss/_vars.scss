@@ -3,5 +3,12 @@
     font-weight: 700;
 };
 
+@media (max-width: 540px) {
+    %title-font{
+        font-size: 20px;
+        line-height: 1;
+    };
+}
+
 $title-color:#363838;
 $default-color:#5A5A5A;

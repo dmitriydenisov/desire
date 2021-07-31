@@ -1,10 +1,18 @@
 $(function(){
     $('.header__btn').on('click', function(){
         $('.rightside-menu').addClass('rightside-menu--active');
-    })
+    });
     $('.rightside-menu__close').on('click', function(){
         $('.rightside-menu').removeClass('rightside-menu--active');
-    })
+    });
+
+    $('.header__btn-menu').on('click', function(){
+        $('.menu').toggleClass('menu--open');
+    });
+    
+    if($(window).width() < 651){
+        $('.works-path__item--measurements').appendTo('.works-path__items-box')
+    }
 
     $('.top__slider').slick({
         dots:true,
