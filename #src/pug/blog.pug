@@ -39,6 +39,10 @@ html(lang="en")
 >>>>>>> main
                                 li.menu__list-item 
                                     a.menu__list-link(href="contacts.html") Contact
+                        button.header__btn-menu
+                            span 
+                            span 
+                            span 
                         button.header__btn
                             img(src="img/icon_menu.svg", alt="")
                         .rightside-menu
@@ -75,10 +79,8 @@ html(lang="en")
                                 blockquote.blog__blockquote “Simplicity is not the goal. It is the by-product of a good idea and modest expectations” 
                                     .blog__blockquote-author Paul Rand
                                 .blog__item.article-video
-                                    img.blog__item-img(src="img/blog/big-2.jpg", alt="")
-                                    .video-popup.video-popup--blog
-                                        button.video-popup-play(data-btn-video="")
-                                            img.video-popup-img(src="img/icons/play.svg", alt="")
+                                    button.video-popup-play(data-btn-video11="")
+                                        img.blog__item-img(src="img/blog/big-2.png", alt="", data-btn-video="")
                                         .video-popup-player(data-modal-video="")
                                             .video-modal
                                                 #player 
@@ -215,4 +217,4 @@ html(lang="en")
     script(src="libs/jquery/jquery.js")
     script(src="libs/slick/slick.min.js")
     script(src="js/video.min.js")
-    script(src="js/main.js")
+    script(src="js/main.min.js")

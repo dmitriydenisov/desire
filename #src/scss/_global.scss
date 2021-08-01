@@ -2,14 +2,18 @@ html,
 body {
 	height: 100%;
 }
+html{
+	overflow-x: hidden;
+
+}
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 27px;
 	color: $default-color;
-	overflow-x: hidden;
-	min-width: 320px;
+	// overflow-x: hidden;
+	min-width: 300px;
 }
 .wrapper {
 	display: flex;
