@@ -343,6 +343,25 @@
             width: 100%;
         }
     }
+    .single-article__link{
+        span{
+            display: none;
+        }
+    }
+    .single-article{
+        &__comments-item{
+            display: block;
+        }
+        &__comments-avatar{
+            margin-bottom: 15px;
+        }
+        &__form{
+            flex-wrap: wrap;
+        }
+        &__form-input{
+            width: 100%;
+        }
+    }
 }
 @media(max-width: 420px) {
     .blog__blockquote{
