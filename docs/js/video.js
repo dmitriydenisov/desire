@@ -4,17 +4,16 @@ tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// let player;
+let player;
 function onYouTubeIframeAPIReady() {
-  let player;
   player = new YT.Player('player', {
     height: '360',
     width: '640',
-    videoId: 'a_FSfzQ2IW4', 
+    videoId: 'a_FSfzQ2IW4',
   });
 }
 
-document.querySelector('[data-btn-video]').addEventListener('click', () => {   
+document.querySelector('[data-btn-video]').addEventListener('click', () => {
     document.querySelector('[data-modal-video]').style.display='block'
     //onPlayerReady(event)
 })
@@ -25,12 +24,13 @@ function onPlayerReady(event) {
 
 
 document.querySelector('[data-modal-video]').addEventListener('click', () => {
-    document.querySelector('[data-modal-video]').style.display='none' 
-    player.stopVideo();       
+    document.querySelector('[data-modal-video]').style.display='none'
+    player.stopVideo();
 })
 
 document.addEventListener("keydown", function ( event ) {
     if (event.key === "Escape") {
-        document.querySelector('[data-modal-video]').style.display='none' 
+        document.querySelector('[data-modal-video]').style.display='none'
+        player.stopVideo();
     }
 })
